@@ -17,10 +17,7 @@ const Header = () => (
         </a>
       </p>
       <p className='app_paragraph'>
-      "Our restaurant, nestled in the heart of Pune, 
-      offers a culinary journey through diverse flavors.
-       Experience a symphony of tastes with our expertly crafted dishes, 
-       prepared using fresh, local ingredients."
+      "........"
 
       </p>
       <button type='button' className='header_btn'>
