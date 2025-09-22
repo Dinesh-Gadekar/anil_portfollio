@@ -1,0 +1,91 @@
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: black;
+  color: white;
+  position: relative;
+}
+
+/* Logo */
+.navbar-logo img {
+  width: 120px;
+}
+
+/* Navbar Links */
+.navbar-links {
+  display: flex;
+  list-style: none;
+  color: white;
+  gap: 20px;
+}
+
+.navbar-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Auth & Booking */
+.navbar-auth {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+
+/* Divider */
+.divider {
+  color: white;
+}
+
+/* Hamburger Icon (Hidden in Desktop) */
+.hamburger {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Hide Navbar Links in Mobile */
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    color: white;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+  }
+
+  /* Show Navbar Links when Open */
+  .navbar-links.open {
+    display: flex;
+    color: white;
+  }
+
+  /* Move Auth & Booking to Center in Mobile */
+  .navbar-auth {
+    position: absolute;
+    top: 15px;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    color: white;
+  }
+  .navbar-auth a {
+    
+    color: white;
+    
+  }
+
+  /* Show Hamburger in Mobile View */
+  .hamburger {
+    display: block;
+  }
+}

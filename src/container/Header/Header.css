@@ -1,0 +1,83 @@
+.header_class {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background-color: black;
+    color: white;
+}
+
+.app_class {
+    width: 50%;
+}
+.app_email{
+    margin-top: -15px;
+     font-weight: bold;
+     color: rgb(171, 172, 170);
+
+}
+.app_email a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;              /* space between icon and text */
+  font-size: 16px;
+  font-weight: 500;
+  color: #a6a7a9;        /* blue shade */
+  text-decoration: none; /* remove underline */
+  transition: color 0.3s ease;
+}
+
+
+.app_email a:hover {
+  color: #a7c4b1;        /* darker blue on hover */
+  text-decoration: wavy;
+  transform: translateX(3px); /* smooth right shift */
+}
+
+.mail_icon {
+  width: 18px;
+  height: 18px;
+  color: inherit;        /* matches link color */
+  transition: transform 0.3s ease;
+}
+
+.app_email a:hover .mail_icon {
+  transform: rotate(-15deg); /* small rotation on hover */
+}
+.app_header_one {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: -50px;
+    color: #FFD700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.app_paragraph {
+    width: 80%;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.header_btn {
+    background-color: rgb(240, 238, 230);
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.header_class_img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.header_img {
+    width: 50%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+}

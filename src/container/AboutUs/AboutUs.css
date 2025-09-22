@@ -1,0 +1,128 @@
+/* Main Container */
+.main_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: #EAC77E; /* Goldish color */
+    padding: 40px;
+    text-align: center;
+    position: relative;
+}
+
+/* Left & Right Sections */
+.left_div
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;  
+}
+
+.right_div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Middle Section (G and Knife) */
+.image-container {
+    position: relative;
+    width: 120px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Large "G" Letter */
+.image-container .g {
+    position: absolute;
+    width: 300px; /* Adjust size */
+    opacity: 0.5; /* Light faded effect */
+    z-index: 1;
+}
+
+/* Knife Styling */
+.image-container .knife img {
+    position: absolute;
+    width: auto;
+    height: 500px; /* Large knife */
+    z-index: 2; /* Knife stays in front */
+    top: -10px; /* Move knife higher */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Headings */
+.left_h1
+{
+    font-size: 55px;
+    font-family: 'serif';
+    font-weight: bold;
+    text-align: right;
+    font-style: italic;
+    padding-right: 10%;
+}
+
+.right_h1 {
+    font-size: 55px;
+    font-family: 'serif';
+    font-weight: bold;
+    padding-right: 30%;
+    padding-top: 80%;
+    font-style: italic;
+}
+
+/* Spoon Image */
+
+
+
+/* Paragraph Styling */
+.left_P {
+    font-size: 16px;
+    max-width: 400px;
+    line-height: 1.5;
+}
+
+/* Buttons */
+.about-btn {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 100;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+
+.about-btn:hover {
+    background-color: grey;
+}
+.about-btn_1 {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 100;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+
+.about-btn_1:hover {
+    background-color: grey;
+}
+
+
+

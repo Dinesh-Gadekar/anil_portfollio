@@ -1,0 +1,55 @@
+.chef {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 17%;
+    background-color: black;
+    color: white;
+    position: relative;
+  }
+.chef_img {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.chef_img img{
+    width: 500%;
+    
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+.sub_head
+{
+   
+    padding-left: 20%;
+    text-align: center;
+    
+}
+.heading
+{
+    font-weight: 20px;
+    color: gold;
+    font-size: 50px;
+    padding-right: 20px;
+}
+.paragraph
+{
+    text-align: center;
+    padding-left: 20% ;
+    padding-right: 10%;
+}
+.sec_p
+{ 
+    color: gold;
+    padding-right: 400px;
+}
+.heading_2
+{
+    padding-right: 370px;
+    font-size: 15px;
+}
+.sign_img{
+    padding-left: -20%;
+}

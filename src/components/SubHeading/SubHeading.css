@@ -1,0 +1,18 @@
+.p_class
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    color: white;
+    margin-top: -30px;
+}
+.b{
+    margin-top: -40px;
+}
+.spoon__img
+{  
+    
+
+}
+.spoon__img:hover {
+    box-shadow: 0 0 2px 1px rgba(240, 237, 237, 0.5);
+  }
