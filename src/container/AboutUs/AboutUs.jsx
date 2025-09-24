@@ -3,14 +3,17 @@ import { images } from '../../constants';
 import './AboutUs.css';
 
 const AboutUs = () => (
+    <div id="about">
   <div className='main_div'>
     <div className='left_div'>
       <h1 className='left_h1'> About Us </h1>
-      <img src={images.spoon} alt='about_spoon' className='spoon_img_1'/>
+      <img src={images.about} alt='about_spoon' className='spoon_img_1'/>
       <p className='left_P'>
-      Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. 
-        Quis Pharetra Adipiscing Ultrices Vulputate Posuere Tristique. 
-        In Sed Odio Nec Aliquet Eu Proin Mauris Et.
+     Hi! I’m Anil Mane, a passionate graphic designer with a 
+     love for creating visually
+      compelling and meaningful designs. I specialize in
+       branding, digital illustrations, UI/UX, and print design,
+        helping businesses and individuals bring their ideas to life.
       </p>
       <button className='about-btn'>Know more</button>
 
@@ -26,17 +29,19 @@ const AboutUs = () => (
     </div>
 
     <div className='left_div'>
-      <h1 className='left_h1'> Our History </h1>
-      <img src={images.spoon} alt='about_spoon' className='spoon_img_1'/>
+      <h1 className='left_h1'> Our Experience </h1>
+      <img src={images.experience} alt='about_spoon' className='spoon_img_1'/>
       <p className='left_P'>
-      Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. 
-        Quis Pharetra Adipiscing Ultrices Vulputate Posuere Tristique. 
-        In Sed Odio Nec Aliquet Eu Proin Mauris Et.
-      </p>
+      <h3>Graphic Designer<br></br>
+JSPM, Katraj, Pune</h3>
+</p>
+<p className='left_para'>October 2022 – July 2025</p>
+      
       <button className='about-btn'>Know more</button>
 
       
     </div>
+  </div>
   </div>
 );
 

@@ -22,18 +22,19 @@
   gap: 20px;
 }
 
+/* Navbar Links */
 .navbar-links li a {
   color: white;
   text-decoration: none;
+  cursor: pointer; /* <-- Add this line */
 }
 
-/* Auth & Booking */
-.navbar-auth {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+/* Auth & Booking links */
+.navbar-auth a {
   color: white;
+  cursor: pointer; /* <-- Add this line */
 }
+
 
 /* Divider */
 .divider {

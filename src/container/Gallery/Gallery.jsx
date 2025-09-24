@@ -28,10 +28,11 @@ const Gallery = () => {
   };
 
   return (
+     <div id="menu">
     <div className="app__gallery flex__center">
       <div className="app__gallery-content">
-        <SubHeading title="Instagram" />
-        <h1 >Photo Gallery </h1>
+        <SubHeading title="Work Highlights" />
+        <h1 >Our Creations </h1>
         <p className="p__opensans" style={{ color: "#AAA", marginTop: "2rem" }}>
           Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Volutpat
           Mattis Ipsum Turpis Elit Elit Scelerisque Egestas Mu.
@@ -65,6 +66,7 @@ const Gallery = () => {
           />
         </div>
       </div>
+    </div>
     </div>
   );
 };

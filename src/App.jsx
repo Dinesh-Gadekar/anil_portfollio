@@ -17,14 +17,17 @@ import "./App.css";
 const App = () => (
   <div>
     <Navbar />
-    <Header />
-    <AboutUs />
-    <SpecialMenu />
-    <Chef />
-    <Intro />
-    <Laurels />
-    <Gallery />
-    <FindUs />
+   <Header id="home" />
+<AboutUs id="about" />
+<Gallery id="menu" />
+{/* <SpecialMenu id="menu" /> */}
+<Chef id="chef" />
+<Intro id="intro" />
+<Laurels id="laurels" />
+<FindUs id="contact" />
+
+    
+    
     <Footer />
   </div>
 );
