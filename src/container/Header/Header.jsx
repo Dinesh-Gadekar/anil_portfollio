@@ -12,6 +12,10 @@ const Header = () => (
   
     <div id="home">
   <div className='header_class'>
+    <div className='header_class_img'>
+      <img src={images.welcome} className='header_img' alt='header img'>
+      </img>
+    </div>
     <div className="app_class">
       <h1 className='app_header_one'><marquee>Anil Mane</marquee> </h1>
      <SubHeading title="Graphic Designer"/>
@@ -34,10 +38,7 @@ const Header = () => (
           </button>
     </div>
 
-    <div className='header_class_img'>
-      <img src={images.welcome} className='header_img' alt='header img'>
-      </img>
-    </div>
+    
   </div>
   </div>
 );

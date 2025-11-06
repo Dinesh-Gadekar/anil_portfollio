@@ -1,55 +1,92 @@
-.chef {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 17%;
-    background-color: black;
-    color: white;
-    position: relative;
-  }
-.chef_img {
-    width: 15%;
-    display: flex;
-    justify-content: center;
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  background-color: #fff;
 }
 
-.chef_img img{
-    width: 500%;
-    
-    max-width: 500px;
-    height: auto;
-    border-radius: 10px;
+/* Form Container */
+.contact_form_wrapper {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 15px;
+  background: #f8f8f8;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  position: relative;
 }
-.sub_head
-{
-   
-    padding-left: 20%;
-    text-align: center;
-    
+
+/* Heading */
+.contact_heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #FFD700;
+  margin: 0.5rem 0 1rem 0;
+  text-align: center;
 }
-.heading
-{
-    font-weight: 20px;
-    color: gold;
-    font-size: 50px;
-    padding-right: 20px;
+
+/* Paragraph */
+.contact_paragraph {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 2rem;
+  text-align: center;
 }
-.paragraph
-{
-    text-align: center;
-    padding-left: 20% ;
-    padding-right: 10%;
+
+/* Form */
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
-.sec_p
-{ 
-    color: gold;
-    padding-right: 400px;
+
+.contact_form label {
+  font-weight: 500;
+  color: #333;
 }
-.heading_2
-{
-    padding-right: 370px;
-    font-size: 15px;
+
+.contact_form input {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: all 0.3s ease;
 }
-.sign_img{
-    padding-left: -20%;
+
+.contact_form input:focus {
+  outline: none;
+  border-color: #FFD700;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+/* Submit Button */
+.contact_form button {
+  margin-top: 1rem;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  background: #FFD700;
+  color: #000;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.contact_form button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 215, 0, 0.5);
+}
+
+/* Responsive */
+@media(max-width:650px) {
+  .contact_form_wrapper {
+    padding: 1.5rem;
+  }
 }

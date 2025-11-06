@@ -21,10 +21,11 @@ const App = () => (
 <AboutUs id="about" />
 <Gallery id="menu" />
 {/* <SpecialMenu id="menu" /> */}
-<Chef id="chef" />
+
 <Intro id="intro" />
 <Laurels id="laurels" />
 <FindUs id="contact" />
+<Chef id="chef" />
 
     
     

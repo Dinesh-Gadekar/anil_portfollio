@@ -4,9 +4,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 15px 40px;
-  background-color: black;
+  background-color:  #6b50a0;
   color: white;
   position: relative;
+}
+.site_logo_img{
+   width: 120px;
 }
 
 /* Logo */
@@ -24,7 +27,7 @@
 
 /* Navbar Links */
 .navbar-links li a {
-  color: white;
+  color:yellow;
   text-decoration: none;
   cursor: pointer; /* <-- Add this line */
 }
@@ -69,22 +72,7 @@
     color: white;
   }
 
-  /* Move Auth & Booking to Center in Mobile */
-  .navbar-auth {
-    position: absolute;
-    top: 15px;
-    color: white;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-    color: white;
-  }
-  .navbar-auth a {
-    
-    color: white;
-    
-  }
-
+  
   /* Show Hamburger in Mobile View */
   .hamburger {
     display: block;

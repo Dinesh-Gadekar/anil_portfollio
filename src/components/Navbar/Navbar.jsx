@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
+import { images } from '../../constants';
 
 import "./Navbar.css";
 
@@ -21,18 +22,17 @@ const Navbar = () => {
      <ul className={`navbar-links ${isOpen ? "open" : ""}`}>
   <li><Link to="home" smooth={true} duration={500}>Home</Link></li>
   <li><Link to="about" smooth={true} duration={500}>About</Link></li>
-  <li><Link to="menu" smooth={true} duration={500}>Projects</Link></li>
-  <li><Link to="chef" smooth={true} duration={500}>Chef</Link></li>
+  <li><Link to="menu" smooth={true} duration={500}>Services</Link></li>
+
   <li><Link to="gallery" smooth={true} duration={500}>Gallery</Link></li>
   <li><Link to="contact" smooth={true} duration={500}>Contact</Link></li>
 </ul>
 
-      {/* Auth & Booking (Moves to Center on Mobile) */}
-      <div className="navbar-auth">
-        <a href="/login">Log In / Register</a>
-        <span className="divider">|</span>
-        <a href="/book-table">Book Table</a>
-      </div>
+     
+       <div className='site_logo_img'>
+            <img src={images.site_logo} className='site_logo_img' alt='hsite_logo_img'>
+            </img>
+          </div>
     </nav>
   );
 };
