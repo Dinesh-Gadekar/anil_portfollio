@@ -43,7 +43,7 @@
 /* Large "G" Letter */
 .image-container .g {
     position: absolute;
-    width: 300px; /* Adjust size */
+    width: 250px; /* Adjust size */
     opacity: 0.5; /* Light faded effect */
     z-index: 1;
 }
@@ -53,7 +53,7 @@
     position: absolute;
     width: auto;
     height: 250px; /* Large knife */
-      opacity: 0.3; /* Light faded effect */
+      opacity: 0.0; /* Light faded effect */
        z-index: 2; /* Knife stays in front */
     top: 130px; /* Move knife higher */
     left: 50%;
@@ -64,8 +64,9 @@
 /* Headings */
 .left_h1
 {
-    font-size: 55px;
-    font-family: 'serif';
+    font-size: 50px;
+     font-family: 'Poppins', sans-serif;
+
     font-weight: bold;
     text-align: right;
     font-style: italic;
@@ -73,11 +74,12 @@
 }
 
 .right_h1 {
-    font-size: 55px;
-    font-family: 'serif';
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+
     font-weight: bold;
     padding-right: 30%;
-    padding-top: 80%;
+    padding-top: 50%;
     font-style: italic;
 }
 
@@ -89,6 +91,8 @@
 .left_P {
     font-size: 16px;
     max-width: 400px;
+    font-family: 'Poppins', sans-serif;
+
     line-height: 1.5;
 }
 .left_para {
