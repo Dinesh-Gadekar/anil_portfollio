@@ -4,7 +4,7 @@ import { SubHeading } from "../../components";
 import { images } from "../../constants";
 import "./Gallery.css";
 
-const galleryImages = [images.gallery01, images.gallery02, images.gallery03, images.gallery04];
+const galleryImages = [ images.gallery02, images.gallery03, images.gallery04];
 
 const Gallery = () => {
   const scrollRef = useRef(null);
@@ -29,7 +29,7 @@ const Gallery = () => {
   }, []);
 
   return (
-    <div id="menu">
+    <div id="projects">
       <div className="app__gallery flex__center">
         {/* Text Content with stars */}
         <div className="app__gallery-content-wrapper">
@@ -38,7 +38,7 @@ const Gallery = () => {
             ref={contentRef}
           >
             <SubHeading title="Work Highlights" />
-            <h1>Our Services</h1>
+            <h1>Our Projects</h1>
             <p className="p__opensans">
               Crafting unique visuals, memorable brands, and intuitive digital
               experiences through creative design solutions.

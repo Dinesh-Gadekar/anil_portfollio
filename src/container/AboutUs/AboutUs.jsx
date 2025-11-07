@@ -2,47 +2,51 @@ import React from 'react';
 import { images } from '../../constants';
 import './AboutUs.css';
 
-const AboutUs = () => (
-    <div id="about">
-  <div className='main_div'>
-    <div className='left_div'>
-      <h1 className='left_h1'> About Us </h1>
-      <img src={images.about} alt='about_spoon' className='spoon_img_1'/>
-      <p className='left_P'>
-     Hi! I’m Anil Mane, a passionate graphic designer with a 
-     love for creating visually
-      compelling and meaningful designs. I specialize in
-       branding, digital illustrations, UI/UX, and print design,
-        helping businesses and individuals bring their ideas to life.
-      </p>
-      <button className='about-btn'>Know more</button>
+const Experience = () => (
+   <div id="about">
+  <div id="experience" className="experience">
+    <div className="experience__container">
 
-      
-    </div>
+      {/* ===== Experience Section ===== */}
+      <div className="experience__content">
+        <h1 className="experience__title">Experience</h1>
+        <img src={images.experience} alt="experience_icon" className="experience__icon" />
 
-    <div className='image-container'>
-      <img src={images.G} className='g' alt='G'/>
-      <div className='knife'>
-      <img src={images.knife} alt='knife'/>
+        <div className="experience__list">
+          <div className="experience__item">
+            <h3>Graphic Designer</h3>
+            <p className="experience__company">JSPM, Katraj, Pune</p>
+            <p className="experience__date">October 2022 – July 2025</p>
+            <p className="experience__desc">
+              Worked on branding, digital design, and promotional materials for college events, 
+              enhancing visual identity and user engagement.
+            </p>
+          </div>
+
+          <div className="experience__item">
+            <h3>Freelance Designer</h3>
+            <p className="experience__company">Remote / Independent</p>
+            <p className="experience__date">August 2025 – Present</p>
+            <p className="experience__desc">
+              Collaborating with clients to create professional designs for print, web, and 
+              social media—helping brands communicate visually.
+            </p>
+          </div>
+        </div>
+
+        <button className="experience__btn">View Projects</button>
       </div>
-    
-    </div>
 
-    <div className='left_div'>
-      <h1 className='left_h1'> Our Experience </h1>
-      <img src={images.experience} alt='about_spoon' className='spoon_img_1'/>
-      <p className='left_P'>
-      <h3>Graphic Designer<br></br>
-JSPM, Katraj, Pune</h3>
-</p>
-<p className='left_para'>October 2022 – July 2025</p>
-      
-      <button className='about-btn'>Know more</button>
-
-      
+      {/* ===== Right Image / Graphic ===== */}
+      <div className="experience__image">
+        <img src={images.G} alt="G letter" className="experience__bg" />
+        <div className="experience__overlay">
+          {/* <img src={images.knife} alt="decorative" /> */}
+        </div>
+      </div>
     </div>
   </div>
   </div>
 );
 
-export default AboutUs;
+export default Experience;

@@ -19,11 +19,12 @@ const App = () => (
     <Navbar />
    <Header id="home" />
 <AboutUs id="about" />
-<Gallery id="menu" />
+<Laurels id="services" />
+
 {/* <SpecialMenu id="menu" /> */}
 
 <Intro id="intro" />
-<Laurels id="laurels" />
+<Gallery id="projects" />
 <FindUs id="contact" />
 <Chef id="chef" />
 

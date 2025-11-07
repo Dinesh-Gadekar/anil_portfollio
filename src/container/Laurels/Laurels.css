@@ -1,47 +1,174 @@
-.laurels
-{
-    display: flex;
-  justify-content: space-between;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Playfair+Display:wght@700&display=swap');
+
+/* =====================
+   Base Layout
+===================== */
+.laurels {
+  display: flex;
   align-items: center;
-  padding: 50px;
-  background-color: black;
-  color: #fff;
-}
-.spoon_img1
-{
-    width: 50px;
-}
-h1
-{   
-    color: gold;
-    font-size: 45px;
-    padding-right: 50%;
+  justify-content: space-between;
+  padding: 60px;
+  background: linear-gradient(135deg, #fff 0%, #fafafa 100%);
+  gap: 3rem;
+  will-change: transform;
 }
 
-h2
-{
-    color: gold;
-    font-weight: 10;
-    font-style: italic;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+/* =====================
+   Left Content Section
+===================== */
+.laurels__content {
+  flex: 1;
+  max-width: 550px;
 }
-.left_div
-{
-    flex: 1;
-    max-width: 50%;
+
+.laurels__title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  color: #222;
+  margin: 1rem 0 1.5rem;
 }
-.right_div
-{
-    flex: 1;
-    max-width: 50%;
+
+.laurels__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem 3rem;
 }
-.left_div img
-{
-    width: 50px;
-    height: auto;
+
+.laurels__item {
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform;
+  backface-visibility: hidden;
 }
-.right_div img
-{
-    width: auto;
-    height: 550px;
+
+.laurels__item:hover {
+  transform: translateY(-6px);
+  /* box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); */
+}
+
+/* =====================
+   Icons / Images
+===================== */
+.laurels__item img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+  will-change: transform;
+}
+
+.laurels__item:hover img {
+  transform: scale(1.1);
+}
+
+/* =====================
+   Titles & Text
+===================== */
+.laurels__item h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #d71616;
+  margin-bottom: 0.5rem;
+}
+
+.laurels__item p {
+  font-family: 'Poppins', sans-serif;
+  color: #555;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  transition: color 0.3s ease, letter-spacing 0.3s ease, text-shadow 0.3s ease;
+  will-change: color, letter-spacing;
+}
+
+.laurels__item:hover p {
+  color: #ff4da6;
+  letter-spacing: 0.2px;
+  text-shadow: 0 0 8px rgba(255, 77, 166, 0.3);
+}
+
+/* =====================
+   Right Image Section
+===================== */
+.laurels__image {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease;
+  will-change: transform;
+}
+
+/* Main Image */
+.laurels__image img {
+  width: 420px;
+  border-radius: 20px;
+  object-fit: cover;
+  opacity: 0;
+  transform: translateY(40px) scale(0.95);
+  transition: all 1.2s ease-in-out;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Image Visible Animation */
+.laurels__image.active img {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Floating Effect */
+@keyframes float {
+  0% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-10px) scale(1.02); }
+  100% { transform: translateY(0) scale(1); }
+}
+
+/* =====================
+   Shine Sweep Effect
+===================== */
+.laurels__image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transform: skewX(-25deg);
+  pointer-events: none;
+}
+
+.laurels__image:hover::before {
+  animation: shine 1s ease forwards;
+}
+
+@keyframes shine {
+  100% { left: 125%; }
+}
+
+/* =====================
+   Responsive Design
+===================== */
+@media (max-width: 992px) {
+  .laurels {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .laurels__content {
+    max-width: 100%;
+  }
+
+  .laurels__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .laurels__image img {
+    width: 300px;
+  }
 }
