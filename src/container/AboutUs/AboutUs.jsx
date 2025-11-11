@@ -1,6 +1,7 @@
 import React from 'react';
 import { images } from '../../constants';
 import './AboutUs.css';
+import { Link } from "react-scroll";
 
 const Experience = () => (
    <div id="about">
@@ -34,7 +35,7 @@ const Experience = () => (
           </div>
         </div>
 
-        <button className="experience__btn">View Projects</button>
+        <button className="experience__btn"><Link to="projects" smooth={true} duration={500}>View Projects</Link></button>
       </div>
 
       {/* ===== Right Image / Graphic ===== */}
